@@ -38,6 +38,47 @@ body[type*=server] #body_home {
   padding: 2px 0;
 }
 
+body div[type*=kick] .message:before,
+body div[type*=part] .message:before,
+body div[type*=quit] .message:before {
+	content: "←" !important;
+  	color: #e00 !important;
+  	/* margin-right: 0.4em; */
+}
+
+
+body div[type*=nick] .message:before,
+body div[type*=topic] .message:before,
+body div[type*=mode] .message:before,
+body div[type*=website] .message:before,
+body div[type*=action] .message:before {
+	content:"•" !important;
+  	color: #0c0 !important;
+  	/* margin-right: 0.4em; */
+}
+
+body div[type*=join] .message:before {
+	content: "→" !important;
+  	color: #0c0 !important;
+  	/* margin-left: 0.4em; */
+}
+
+body div[type*=kick] .message:before,
+body div[type*=part] .message:before,
+body div[type*=quit] .message:before {
+	content: "←" !important;
+  	color: #e00 !important;
+  	/* margin-left: 0.4em; */
+}
+
+body div[type*=nick] .message:before {
+	content:"•" !important;
+  	color: #0c0 !important;
+  	/* margin-left: 0.4em; */
+}
+
+
+
 .message,
 .sender,
 .time {
@@ -67,7 +108,7 @@ body[type*=server] .sender { display: none; }
 
 .time {
   color: #888;
-  font-size: 0.8em;
+  font-size: 0.9em;
   line-height: 1.8;
   white-space: nowrap;
 }
