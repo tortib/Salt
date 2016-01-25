@@ -121,11 +121,11 @@ body[type*=server] .sender { display: none; }
 .line[nickname-type*=myself] .message,
 .line[nickname-type*=myself] .sender,
 .line[nickname-type*=myself] .time {
-  background-color: #ccddff;
+  background-color: #e1eaf4;
 }
 
 .line[nickname-type*=myself][type*=action] {
-  background-color: #ccddff;
+  background-color: #e1eaf4;
 }
 
 .line[type*=action] .message,
@@ -169,7 +169,7 @@ body[type*=server] .event .message:before {
 .text[highlight*=true] .sender,
 .text[highlight*=true] .message,
 .text[highlight*=true] .time {
-  background-color: #e1eaf4;
+  background-color: #ccddff;
 }
 
 body [type*=notice] .sender,
@@ -333,7 +333,7 @@ body .line {
   border-top:1px solid #efefef;
 }
 
-body .text .sender[type*=myself] { background-color: #ccddff; color: #ff3333; }
+body .text .sender[type*=myself] { background-color: #e1eaf4; color: #ff3333; }
 
 body .sender[type*=normal][colornumber='0']  { color: #718c00; }
 body .sender[type*=normal][colornumber='1']  { color: #718c00; }
