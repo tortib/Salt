@@ -52,9 +52,13 @@ body div[type*=topic] .message:before,
 body div[type*=mode] .message:before,
 body div[type*=website] .message:before,
 body div[type*=action] .message:before {
-	content:"•" !important;
   	color: #0c0 !important;
   	/* margin-right: 0.4em; */
+}
+
+.line[type*=action] .sender:before {
+  content:"•" !important;
+  color: #0c0 !important;
 }
 
 body div[type*=join] .message:before {
